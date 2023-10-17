@@ -1,0 +1,23 @@
+body{
+    background-color: #282A36;
+    display: flex;
+}
+.main{
+    color: white;
+    text-align: center;
+}
+
+.img{
+    height: 50px;
+    width: 50px;
+    padding-top: 200px;
+    
+}
+.hehim{
+    height: 10px;
+    
+}
+.header_{
+    padding-bottom: 200px;
+}
+
