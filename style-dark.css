@@ -3,21 +3,50 @@ body{
     display: flex;
 }
 .main{
-    color: white;
+    color: whitesmoke;      
     text-align: center;
+    padding-left: 800px;
+    text-size-adjust: 10px;
 }
 
 .img{
     height: 50px;
     width: 50px;
-    padding-top: 200px;
-    
+    padding-top: 50px;
 }
 .hehim{
     height: 10px;
     
 }
 .header_{
-    padding-bottom: 200px;
+padding-top: 1%;
+padding-bottom: 500px;
+color: black;
+
 }
 
+
+
+.bckg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .bckg{
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+
+@media (max-aspect-ratio: 16/9){
+    .bckg{
+        width: auto;
+        height: 100%;
+
+    }
+
+}
