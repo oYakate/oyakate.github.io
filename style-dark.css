@@ -6,7 +6,6 @@ body{
     color: whitesmoke;      
     text-align: center;
     padding-left: 800px;
-    
 }
 
 .img{
@@ -49,4 +48,27 @@ color: black;
 
     }
 
+}
+.proj{
+    width: 200px;
+}
+.proj li{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.proj li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+.proj li a:hover{
+background: white;
+color: black;
+}
+.projlist{
+    padding: 70px;
+    width: 200px;
+    height: 70px;
+    background-color: darkcyan;
 }
