@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Font';
+    src: url("../JetBrains.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0rem; 
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="content"] {
+      width: 53%;
+    }
+}
+
+body[data-theme="dark"] {
+    --bg: #0f0f0f;
+    --bg2: #171717;
+    --fg: #fafafa;
+}
+
+body[data-theme="light"] {
+    --bg: #fefefe;
+    --bg2: #dfdfdf;
+    --fg: #404040;
+}
+
+body {
+    font-family: Font;
+    background-color: var(--bg);
+    color: var(--fg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: center;
+}
+.Yakate {
+    text-decoration: none;
+    color: var(--fg);   
+}
+.title{
+    width: 70%;
+    height: 100px;
+    top: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+.pfp {
+    width: 64px;
+    height: 64px;
+    max-width: 100%;
+    border: none;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+.wrapper {
+    margin: 0 auto;
+
+}
+
+h1{
+    color: var(--fg);
+    background-color: var(--bg2);
+    position: relative;
+    margin: auto;
+    padding: 10px 10px;
+    font-size: small;
+    width: 400px;    
+    height: 200;
+}
+h2 {
+    font-size: xx-small;
+}
+.site {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    float: center;
+}
+.links {
+    list-style: none;
+    padding: 20px 20px;
+}
+.links li {
+    display: inline-block;
+}
+.links li a {
+    color: var(--fg);
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+.links li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.links2 {
+    list-style: none;
+    position: absolute;   
+    bottom: 10%;
+    
+}
+.links2 li {
+    display: inline-block;
+}
+.links2 li a {
+    color: var(--fg);
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 14px;
+}
+.links2 li a:hover {
+    color: red;
+}
+
+/*the theme switcher is stolen from sushi-ae*/
+.theme-switcher {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + label {
+    background-color: var(--fg);
+}
+
+input:checked + label::after {
+    background-color: var(--bg);
+    left: 60%;
+}
+
+label {
+    display: block;
+    -webkit-text-fill-color: transparent;
+    height: 30px;
+    width: 60px;
+    background-color: var(--fg);
+    border-radius: 50rem;
+    position: relative;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+label::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50rem;
+    background-color: var(--bg);
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: .5s ease-in-out;
+}
