@@ -95,6 +95,7 @@ h2 {
 .links {
     list-style: none;
     padding: 20px 20px;
+    margin: auto;
 }
 .links li {
     display: inline-block;
