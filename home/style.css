@@ -27,7 +27,7 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="light"] {
-    --bg: #fefefe;
+    --bg: #FDF6E3;
     --bg2: #dfdfdf;
     --fg: #404040;
 }
