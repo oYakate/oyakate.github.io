@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Font';
+    src: url("../fonts/JetBrains.ttf");
+}
+
+::-webkit-scrollbar {
+    width: 0rem; 
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="content"] {
+      width: 53%;
+    }
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 13, 13); 
+    color: #F8F8F2;
+    /*font-family: "Courier New", Courier, monospace;*/
+    font-family: Font;
+}
+
+a {
+    color: #F8F8F2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF5349;
+}
+
+.terminal {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: #F8F8F2;
+    width: 10px;
+    height: 24px;
+    margin-left: 5px;
+    animation: blink 0.5s step-start infinite;
+}
+
+.additional-content {
+    margin-top: 10px;
+    font-size: 16px; 
+    display: flex;
+    flex-wrap: wrap;
+}
